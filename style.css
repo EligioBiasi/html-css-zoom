@@ -4,14 +4,19 @@
     box-sizing: border-box;
 }
 
-main,
-header{
+body{
     background-color: black;
 }
 
+header{
+    margin-bottom: 1.5rem;
+}
+
+
 .container{
     margin: 0 auto;
-    max-width: 80vw;
+    max-width: 90%;
+    height:100vh;
 }
 .flex{
     display: flex;
@@ -19,12 +24,22 @@ header{
 
 .call-box{
     height:calc(100%/4) ;
-    width: calc(100%/7);
-    background-image: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fas1.ftcdn.net%2Fv2%2Fjpg%2F02%2F13%2F07%2F10%2F1000_F_213071072_8Yrs3qYnDC65UNbo7YR2x9kw7M491BYz.jpg&tbnid=nW-hJwc28SDLXM&vet=12ahUKEwiT7cjskKL-AhWDHuwKHSU0CbEQMygDegUIARDAAQ..i&imgrefurl=https%3A%2F%2Fwww.europosters.it%2Fbeautiful-white-town-monopoli-in-puglia-with-turquoise-sea-italy-f213071072&docid=fW-ZYLw2XXAESM&w=1000&h=407&q=sea%20monopoli&ved=2ahUKEwiT7cjskKL-AhWDHuwKHSU0CbEQMygDegUIARDAAQ');
+    width: calc(100%/5);
+    background-image: url('sea.jpg');
     background-size: cover;
     background-position: center;
-
+    position: relative;
+    border: 0.3rem solid black;
 }
+
+.account-name{
+    color: white;
+    background-color: rgba(100,112,122,0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 header .header-icon{
     color: white;
     background-color: hsl(0deg 0% 29.02%);
@@ -36,4 +51,8 @@ header .header-icon{
 header section{
     justify-content: end;
     padding: 0.5rem;
+}
+
+section.container.flex{
+    flex-wrap: wrap;
 }
