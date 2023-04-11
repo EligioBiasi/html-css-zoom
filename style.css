@@ -16,20 +16,19 @@ header{
 .container{
     margin: 0 auto;
     max-width: 90%;
-    height:100vh;
 }
 .flex{
     display: flex;
 }
 
 .call-box{
-    height:200px;
-    width: 240px;
+    height:150px;
+    width:235px;
     background-image: url('sea.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
-    border: 5px solid black;
+    border: 2px solid black;
 }
 
 .account-name{
